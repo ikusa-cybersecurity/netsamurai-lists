@@ -1,34 +1,39 @@
 {
   "base_url": "https://raw.githubusercontent.com/ikusa-cybersecurity/netsamurai-lists/main/",
-  "updated": "2025-05-22T10:53:25Z",
-  "expires": "2025-05-27T10:53:25Z",
+  "updated": "2025-05-22T13:32:57Z",
+  "expires": "2025-05-27T13:32:57Z",
   "lists": [
     {
       "name": "netsamurai-offsets",
+      "desc": "Primary NetSamurai list that indicates the specific fragments of code to be removed in real time to avoid tracking and fingerprinting.",
       "path": "offsets/offsets.json",
       "format": "custom",
       "hash": "14c0b685efc86fb20d7c21f282f9c1018ef9a0671086097daf2df7b574042324"
     },
     {
       "name": "netsamurai-paywalls",
+      "desc": "Supplementary NetSamurai list that removes paywalls for some of the most widely used domains in the region.",
       "path": "rules/paywalls.json",
       "format": "custom+regex",
       "hash": "b2570c2efec22b33bc7c73ccb58128cad7851d9c89a28cf52d6bf5b1305608ba"
     },
     {
       "name": "netsamurai-unbreak",
+      "desc": "Supplementary NetSamurai list that indicates cases in which the resources must not be modified, to avoid breaking functionality. To be removed in newer versions.",
       "path": "rules/unbreak.json",
       "format": "custom+regex",
       "hash": "4af9ca9215de8e7d1472abc9dae76575953184221dc001afe1e7597bdc502534"
     },
     {
       "name": "easylist",
+      "desc": "Primary filter list that removes most adverts from international webpages, including unwanted frames, images and objects. The EasyList authors (https://easylist.to/).",
       "path": "adblock/easylist.txt",
       "format": "adblockplus",
       "hash": "4c8a27e892b07fcee5c87a704c55abcb365074a308011775837c53849e470583"
     },
     {
       "name": "easyprivacy",
+      "desc": "Optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors. The EasyList authors (https://easylist.to/).",
       "path": "adblock/easyprivacy.txt",
       "format": "adblockplus",
       "hash": "d3f1239663aeedc989a6dfc217d5be667bc5378a73a4c1554d40cd6683b6c0df"
