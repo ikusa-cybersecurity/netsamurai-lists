@@ -7,7 +7,11 @@
   "lists": [
     {
       "name": "netsamurai-offsets",
-      "desc": "Primary NetSamurai list that indicates the specific fragments of code to be removed in real time to avoid tracking and fingerprinting.",
+      "desc": {
+          "en": "Primary NetSamurai list (...)",
+          "es": "Lista principal de NetSamurai (...)",
+          "ca": "Llista principal de NetSamurai (...)"
+      },
       "path": "offsets/offsets.json",
       "format": "custom",
       "enabled_default": True,
@@ -15,7 +19,11 @@
     },
     {
       "name": "netsamurai-paywalls",
-      "desc": "Supplementary NetSamurai list that removes paywalls for some of the most widely used domains in the region.",
+      "desc": {
+          "en": "Supplementary NetSamurai list (...)",
+          "es": "Lista suplementaria de NetSamurai (...)",
+          "ca": "Llista suplementària de NetSamurai (...)"
+      },
       "path": "rules/paywalls.json",
       "format": "custom+regex",
       "enabled_default": True,
@@ -23,7 +31,11 @@
     },
     {
       "name": "netsamurai-unbreak",
-      "desc": "Supplementary NetSamurai list that indicates cases in which the resources must not be modified, to avoid breaking functionality. To be removed in newer versions.",
+      "desc": {
+          "en": "Supplementary NetSamurai list (...)",
+          "es": "Lista suplementaria de NetSamurai (...)",
+          "ca": "Llista suplementària de NetSamurai (...)"
+      },
       "path": "rules/unbreak.json",
       "format": "custom+regex",
       "enabled_default": True,
@@ -31,7 +43,11 @@
     },
     {
       "name": "easylist",
-      "desc": "Primary filter list that removes most adverts from international webpages, including unwanted frames, images and objects. The EasyList authors (https://easylist.to/).",
+      "desc": {
+          "en": "Primary filter list (...)",
+          "es": "Lista de filtros principal (...)",
+          "ca": "Llista de filtres principal (...)"
+      },
       "path": "adblock/easylist.txt",
       "format": "adblockplus",
       "enabled_default": True,
@@ -39,7 +55,11 @@
     },
     {
       "name": "easyprivacy",
-      "desc": "Optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors. The EasyList authors (https://easylist.to/).",
+      "desc": {
+          "en": "Optional supplementary filter list (...)",
+          "es": "Lista de filtros suplementaria opcional (...)",
+          "ca": "Llista de filtres suplementària opcional (...)",
+      }, 
       "path": "adblock/easyprivacy.txt",
       "format": "adblockplus",
       "enabled_default": False,
