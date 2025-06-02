@@ -1,11 +1,15 @@
 {
   "base_url": "https://raw.githubusercontent.com/ikusa-cybersecurity/netsamurai-lists/main/",
-  "updated": "2025-05-23T10:16:34Z",
-  "expires": "2025-05-28T10:16:34Z",
+  "updated": "2025-06-02T13:24:43Z",
+  "expires": "2025-06-07T13:24:43Z",
   "lists": [
     {
       "name": "netsamurai-offsets",
-      "desc": "Primary NetSamurai list that indicates the specific fragments of code to be removed in real time to avoid tracking and fingerprinting.",
+      "desc": {
+        "en": "Primary NetSamurai list that indicates the specific fragments of code to be removed in real time to avoid tracking and fingerprinting.",
+        "es": "Lista principal de NetSamurai que indica los fragmentos de c\u00f3digo espec\u00edficos que deben eliminarse en tiempo real para evitar el seguimiento y la toma de huellas digitales.",
+        "ca": "Llista principal de NetSamurai que indica els fragments de codi espec\u00edfics que s'han d'eliminar en temps real per evitar el seguiment i la presa d'empremtes digitals."
+      },
       "path": "offsets/offsets.json",
       "format": "custom",
       "enabled_default": true,
@@ -13,7 +17,11 @@
     },
     {
       "name": "netsamurai-paywalls",
-      "desc": "Supplementary NetSamurai list that removes paywalls for some of the most widely used domains in the region.",
+      "desc": {
+        "en": "Supplementary NetSamurai list that removes paywalls for some of the most widely used domains in the region.",
+        "es": "Lista suplementaria de NetSamurai que elimina los muros de pago para algunos de los dominios m\u00e1s utilizados en la regi\u00f3n.",
+        "ca": "Llista suplement\u00e0ria de NetSamurai que elimina els murs de pagament per a alguns dels dominis m\u00e9s utilitzats a la regi\u00f3."
+      },
       "path": "rules/paywalls.json",
       "format": "custom+regex",
       "enabled_default": true,
@@ -21,7 +29,11 @@
     },
     {
       "name": "netsamurai-unbreak",
-      "desc": "Supplementary NetSamurai list that indicates cases in which the resources must not be modified, to avoid breaking functionality. To be removed in newer versions.",
+      "desc": {
+        "en": "Supplementary NetSamurai list that indicates cases in which the resources must not be modified, to avoid breaking functionality. To be removed in newer versions.",
+        "es": "Lista suplementaria de NetSamurai que indica los casos en los que los recursos no deben modificarse para evitar romper la funcionalidad. Se eliminar\u00e1 en versiones posteriores.",
+        "ca": "Llista suplement\u00e0ria de NetSamurai que indica els casos en qu\u00e8 els recursos no s'han de modificar per evitar trencar la funcionalitat. S'eliminar\u00e0 en versions posteriors."
+      },
       "path": "rules/unbreak.json",
       "format": "custom+regex",
       "enabled_default": true,
@@ -29,19 +41,27 @@
     },
     {
       "name": "easylist",
-      "desc": "Primary filter list that removes most adverts from international webpages, including unwanted frames, images and objects. The EasyList authors (https://easylist.to/).",
+      "desc": {
+        "en": "Primary filter list that removes most adverts from international webpages, including unwanted frames, images and objects. The EasyList authors: https://easylist.to/.",
+        "es": "Lista de filtros principal que elimina la mayor\u00eda de los anuncios de las p\u00e1ginas web internacionales, incluyendo marcos, im\u00e1genes y objetos no deseados. Los autores de EasyList: https://easylist.to/.",
+        "ca": "Llista de filtres principal que elimina la majoria dels anuncis de les p\u00e0gines web internacionals, incloent-hi marcs, imatges i objectes no desitjats. Els autors d'EasyList https://easylist.to/."
+      },
       "path": "adblock/easylist.txt",
       "format": "adblockplus",
       "enabled_default": true,
-      "hash": "4c8a27e892b07fcee5c87a704c55abcb365074a308011775837c53849e470583"
+      "hash": "508d8b97a30bf94199984ad1d6c1868879f2e5880d2dd6a0e936a60028a88dfb"
     },
     {
       "name": "easyprivacy",
-      "desc": "Optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors. The EasyList authors (https://easylist.to/).",
+      "desc": {
+        "en": "Optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors. The EasyList authors: https://easylist.to/.",
+        "es": "Lista de filtros suplementaria opcional que elimina por completo todas las formas de seguimiento de internet, incluyendo web bugs, scripts de seguimiento y recolectores de informaci\u00f3n. Los autores de EasyList: https://easylist.to/.",
+        "ca": "Llista de filtres suplement\u00e0ria opcional que elimina completament totes les formes de seguiment d'internet, incloent-hi web bugs, scripts de seguiment i recol\u00b7lectors d'informaci\u00f3. Els autors d'EasyList: https://easylist.to/."
+      },
       "path": "adblock/easyprivacy.txt",
       "format": "adblockplus",
       "enabled_default": false,
-      "hash": "d3f1239663aeedc989a6dfc217d5be667bc5378a73a4c1554d40cd6683b6c0df"
+      "hash": "b07b37640d9afdb0fdd06a69c64f518bcbf4c6ab6090581aa4e8b0df65887744"
     }
   ]
 }
