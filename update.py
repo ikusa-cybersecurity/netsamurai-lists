@@ -13,20 +13,20 @@ file_template = {
     "expires": "",  # ISO 8601
     "lists": [
         {
-            "name": "netsamurai-offsets",
+            "name": "netsamurai-unbreak",
             "title": {
-                "en": "NetSamurai Offsets",
-                "es": "NetSamurai Offsets",
-                "ca": "NetSamurai Offsets"
+                "en": "NetSamurai Unbreak",
+                "es": "NetSamurai Unbreak",
+                "ca": "NetSamurai Unbreak"
             },
             "desc": {
-                "en": "Primary NetSamurai list that indicates the specific fragments of code to be removed in real time to avoid tracking and fingerprinting.",
-                "es": "Lista principal de NetSamurai que indica los fragmentos de código específicos que deben eliminarse en tiempo real para evitar el seguimiento y la toma de huellas digitales.",
-                "ca": "Llista principal de NetSamurai que indica els fragments de codi específics que s'han d'eliminar en temps real per evitar el seguiment i la presa d'empremtes digitals."
+                "en": "Supplementary NetSamurai list that indicates cases in which the resources must not be modified, to avoid breaking functionality. To be removed in newer versions.",
+                "es": "Lista suplementaria de NetSamurai que indica los casos en los que los recursos no deben modificarse para evitar romper la funcionalidad. Se eliminará en versiones posteriores.",
+                "ca": "Llista suplementària de NetSamurai que indica els casos en què els recursos no s'han de modificar per evitar trencar la funcionalitat. S'eliminarà en versions posteriors."
             },
-            "path": "offsets/offsets.json",
-            "format": "custom",
-            "mode": "cleanlist",
+            "path": "rules/unbreak.json",
+            "format": "custom+regex",
+            "mode": "allowlist",
             "enabled_default": True,
             "hash": ""  # SHA256
         },
@@ -45,24 +45,6 @@ file_template = {
             "path": "rules/paywalls.json",
             "format": "custom+regex",
             "mode": "blocklist",
-            "enabled_default": True,
-            "hash": ""  # SHA256
-        },
-        {
-            "name": "netsamurai-unbreak",
-            "title": {
-                "en": "NetSamurai Unbreak",
-                "es": "NetSamurai Unbreak",
-                "ca": "NetSamurai Unbreak"
-            },
-            "desc": {
-                "en": "Supplementary NetSamurai list that indicates cases in which the resources must not be modified, to avoid breaking functionality. To be removed in newer versions.",
-                "es": "Lista suplementaria de NetSamurai que indica los casos en los que los recursos no deben modificarse para evitar romper la funcionalidad. Se eliminará en versiones posteriores.",
-                "ca": "Llista suplementària de NetSamurai que indica els casos en què els recursos no s'han de modificar per evitar trencar la funcionalitat. S'eliminarà en versions posteriors."
-            },
-            "path": "rules/unbreak.json",
-            "format": "custom+regex",
-            "mode": "allowlist",
             "enabled_default": True,
             "hash": ""  # SHA256
         },
@@ -100,6 +82,24 @@ file_template = {
             "format": "adblockplus",
             "mode": "blocklist",
             "enabled_default": False,
+            "hash": ""  # SHA256
+        },
+        {
+            "name": "netsamurai-offsets",
+            "title": {
+                "en": "NetSamurai Offsets",
+                "es": "NetSamurai Offsets",
+                "ca": "NetSamurai Offsets"
+            },
+            "desc": {
+                "en": "Primary NetSamurai list that indicates the specific fragments of code to be removed in real time to avoid tracking and fingerprinting.",
+                "es": "Lista principal de NetSamurai que indica los fragmentos de código específicos que deben eliminarse en tiempo real para evitar el seguimiento y la toma de huellas digitales.",
+                "ca": "Llista principal de NetSamurai que indica els fragments de codi específics que s'han d'eliminar en temps real per evitar el seguiment i la presa d'empremtes digitals."
+            },
+            "path": "offsets/offsets.json",
+            "format": "custom",
+            "mode": "cleanlist",
+            "enabled_default": True,
             "hash": ""  # SHA256
         }
     ]
